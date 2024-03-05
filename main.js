@@ -35,7 +35,7 @@ form.addEventListener('submit', function(e) {
     
         tfoot.innerHTML = `<tr>
         <td>Média final</td>
-        <td>${media}</td>
+        <td>${media.toFixed(2)}</td>
         <td><span class=${media >= notaMinima ? '"resultado aprovado">Aprovado' : '"resultado reprovado">Reprovado'}</span></td>
         </tr>`
     }
